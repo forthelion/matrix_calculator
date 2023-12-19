@@ -5,7 +5,7 @@ using System.IO;
 
 namespace matrix_calculator
 {
-    class Class1
+    class Functions
     {
         //number checkers 
         //   function should loop until user enters a valied number and return if user exits before it negavitve -1 marking for error 
@@ -107,6 +107,25 @@ namespace matrix_calculator
             for (int i = 0; i < matrixinfo[1]; i++)
             {
                 for (int j = 0; j < matrixinfo[0]; j++)
+                {
+                    matrix[i, j] = matrix1[i, j] - matrix2[i, j];
+
+                }
+            }
+
+            return matrix;
+
+        }
+
+        public static int[,] multiplicationMatrix(int[,] matrix1, int[,] matrix2, List<int> matrixinfo1, List<int> matrixinfo2)
+        {
+            int[,] matrix;
+            // matrix[ (row = [matrixinfo[1]), (column = [matrixinfo[2]))
+            matrix = new int[matrixinfo1[0], matrixinfo1[1]];
+
+            for (int i = 0; i < matrixinfo1[1]; i++)
+            {
+                for (int j = 0; j < matrixinfo1[0]; j++)
                 {
                     matrix[i, j] = matrix1[i, j] - matrix2[i, j];
 

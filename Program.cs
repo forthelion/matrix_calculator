@@ -11,10 +11,6 @@ namespace matrix_calculator
             bool Exit = false;
             while (Exit == false)
             {
-
-
-
-
                 Console.WriteLine("Do you want to add? type +");
 
                 Console.WriteLine("Do you want to subtract? type -");
